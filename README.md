@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://rhulog.github.io/article-preview-component/
 
 ## My process
 I've been experimenting with Materialize CSS so decided to incorporate that with this challenge. It cut down my time initially but when the time came for placement of the pop-up div, I had to position it individually, which took a while. Either I need to find a way around positioning popup divs in Materialize or just use plain CSS for that particular thing from this point on.
