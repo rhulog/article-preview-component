@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Article preview component</title>
+
+   <!-- font awesome -->
+   <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"crossorigin="anonymous">
+
+   <!-- Compiled and minified CSS -->
+   <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!--Import Google Icon Font-->
+   <link 
+    href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="container">
+    <div class="row">
+      <div class="col s12 l5">
+        <img src="images/drawers.jpg" alt="" class="responsive-img">
+      </div>
+
+      <div class="col s12 l7 text">
+        <div class="row flow-wrap">
+          <h5>
+            Shift the overall look and feel by adding these wonderful touches to furniture in your home
+          </h5>
+        </div>
+        <div class="row flow-wrap">
+          <p class="lighter-font-weight">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+          </p>
+        </div>
+        <div class="row valign-wrapper img-container">
+          <div class="col s3 l5 pull-s2 avatar">
+            <img src="images/avatar-michelle.jpg" alt="">
+          </div>
+          <div class="col s7 l5 pull-s1 pull-l1">
+            Michelle Appleton </br>
+            <span class="lighter-font-weight">28 Jun 2020</span> 
+          </div>
+
+          <!--floating button div-->
+          <div class="col s2 push-l2 pull-s1">
+            <i class="material-icons share-icon">reply</i>
+          </div>
+        </div>
+
+        <div class="row toggle-div valign-wrapper" style="display: none;">
+          <div class="col s2 pull-s1 l2 pull-l2">
+            <p class="share">SHARE</p>
+          </div>
+          <div class="col s7 l6 white-text social-icons">
+            <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a>
+          </div>
+          <div class="col s1 pull-s1 toggle-div-icon">
+            <i class="material-icons share-icon">reply</i>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--jQuery-->
+  <script 
+    src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $('.share-icon').click(function() {
+    $('.toggle-div').toggle();
+  });
+  </script>
+</body>
+</html>
